@@ -1,0 +1,94 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://subscribe-qa.indystar.com/"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "DAILY"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "productId-1284004"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "FULL DIGITAL ACCESS"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "productId-1284016"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "SUNDAY"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "productId-1284017"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "HD SAT+SUN"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "FULL ACCESS/MON-SAT"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "productId-13784001"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "productId-13964001"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": ".activate-access"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Need help or have a question about your account?"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Email customer service at indianapolisstar@gannett.com or call 1-888-357-7827"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": ".chatbutton"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
