@@ -85,6 +85,13 @@
       }
     },
     {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": ".firefly.subscribe.full"
+      }
+    },
+    {
       "type": "assertCurrentUrl",
       "url": "http://subscribe-qa.indystar.com/#deliveryCard"
     },
