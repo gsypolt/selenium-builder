@@ -1,0 +1,58 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://subscribe-qa.indystar.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Activate your digital access"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "zip"
+      },
+      "text": "20141"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "phone-number"
+      },
+      "text": "972-824-1110"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "name",
+        "value": "action"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "No accounts were found with the information provided. Please try again or contact customer service for assistance."
+    },
+    {
+      "type": "assertElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#server-message"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
