@@ -1,0 +1,143 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://subscribe-qa.indystar.com/"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "DAILY"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "productId-1284004"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Subscribe Now"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": ".tertiary.change"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Register"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": ".facebookButton"
+      }
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "firstName"
+      },
+      "value": ""
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "lastName"
+      },
+      "value": ""
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "email"
+      },
+      "value": ""
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "email-confirm"
+      },
+      "value": ""
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "value": ""
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "password-confirm"
+      },
+      "value": ""
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "gender"
+      },
+      "value": ""
+    },
+    {
+      "type": "verifyElementValue",
+      "locator": {
+        "type": "id",
+        "value": "birthYear"
+      },
+      "value": ""
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": ".primary.next"
+      }
+    },
+    {
+      "type": "assertText",
+      "locator": {
+        "type": "css selector",
+        "value": ".cart-total"
+      },
+      "text": "TOTAL $22.00"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#deliveryCard "
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#paymentCard"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
