@@ -8,6 +8,13 @@
       "url": "http://mhigh.indystar.com/"
     },
     {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": ".menu-toggle-btn.main-nav-btn"
+      }
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "css selector",
